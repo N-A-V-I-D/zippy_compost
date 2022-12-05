@@ -1,0 +1,66 @@
+body{
+    background-image: linear-gradient(to right, #74F2CE , #7CFFCB);
+    margin: 0;
+    padding:0 ;
+    font-family: 'Open Sans', sans-serif;
+}
+#heading{
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    padding-top: 20vh;
+    padding-left: 20vw;
+}
+
+#picture{
+    position:absolute; 
+    left: -100%;
+    width: 30%;
+}
+
+ul{
+    list-style-type: none;
+
+}
+#navlist{
+    display: flex;
+    flex-direction: row;
+}
+a {
+    text-decoration: none;
+    padding-right:15px;
+ }
+
+/* SOURCE FOR UNDERLINE EFFECT: https://www.30secondsofcode.org/css/s/hover-underline-animation */
+ .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+
+  #navlist{
+      width: fit-content;
+      text-align: center;
+      margin: auto;
+      left: 50;
+  }

@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient(to right, #74F2CE , #7CFFCB);
+    margin: 0;
+    padding:0 ;
+    font-family: 'Open Sans', sans-serif;
+}
+#headline{
+    text-align: center;
+}
+
+#form1{
+    text-align: center;
+}
+
+#username,#password,#verifypassword {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: auto;
+    border-style: none;
+    
+}
