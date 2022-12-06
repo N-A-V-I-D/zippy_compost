@@ -6,10 +6,12 @@ body{
 }
 #headline{
     text-align: center;
+    padding-top: 20vh;
 }
 
 #form1{
     text-align: center;
+    padding-top: 10vh;
 }
 
 #username,#password,#verifypassword {
@@ -18,5 +20,18 @@ body{
     border-radius: 10px;
     margin: auto;
     border-style: none;
+    font-size: 25px;
+    background-color: #ffffff;
     
+}
+label{
+    font-size: 25px;
+}
+
+#submitButton{
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
+
 }
