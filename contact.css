@@ -12,9 +12,11 @@ body{
 #form1{
     text-align: center;
     padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
 }
 
-#username,#password,#verifypassword {
+#firstName,#lastName,#email{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -22,16 +24,36 @@ body{
     border-style: none;
     font-size: 25px;
     background-color: #ffffff;
+  }
+#memo {
+  resize: both;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: auto;
+  border-style: none;
+  font-size: 25px;
+  background-color: #ffffff;
+  font-size: 20px;
+
+}
 
 }
 label{
-    font-size: 25px;
+    font-size: 20px;
+
 }
 
 #submitButton{
+    padding: 10px 15px 15px 10px;
+    margin-top: 20px;
     font-size: 15px;
     background-color: white;
     border-radius: 10px;
     border-style: none;
 
+}
+
+.hide {
+  display: none;
 }
