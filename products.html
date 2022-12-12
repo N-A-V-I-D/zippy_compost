@@ -14,7 +14,7 @@
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#">			
 	    	<img src="images/navbarIcon.png" alt="brand icon" />
-				<h1>ZC</h1>
+			<h1>ZC</h1>
 			</a>
 
     	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,10 @@
 	          <a class="nav-link" href="#">PRODUCTS</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="signup.html">SIGN UP</a>
+	          <a class="nav-link" href="#">SIGN UP</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="contact.html">CONTACT US</a>
+	          <a class="nav-link" href="#">CONTACT US</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -45,7 +45,6 @@
 		<form>
 			<div class="product">
 				<div class="item">
-
 					<div class="product_indi">
 						<img src="images/bin.png"/>
 						<p><span>Ceramic Compost Crock</span></p>
@@ -99,7 +98,7 @@
 
 		<div class="center box">
 			<h1 class="textTitle" >WE SELL</h1>
-			<form action="product.php" method="post">
+			<form>
 				<div id="ship">
 					<label for="shipping" >Shipping Method:</label>
 						<select id="shipping" name="shipping">
@@ -118,8 +117,8 @@
 					<input type=number id="grandTotal" readonly value=0>
 				</div>
 			</form>
-			<form>
-				<div id="info">
+			<div id="info">
+				<form action="products.php" method="post">
 					<label for="name">ID: </label>
 					<input id="name" type="text" name="ID" placeholder="Eva"><br>
 					<label for="address">Address: </label>
@@ -127,9 +126,9 @@
 					<label for="zip">Zipcode: </label>
 					<input id="zip" type="number" name="Zip" placeholder="10011"><br>
 					<label for="phone">Phone: </label>
-					<input id="phone" type="text" name="Phone" placeholder="000-000-0000"><br>
+					<input id="phone" type="text" name="Phone" placeholder="000-000-0000 "><br>
 					<label for="email">Email: </label>
-					<input type="email" id="email" name="Email" placeholder="eva@gmail.com"><br>
+					<input type="email" id="email" name="Email" placeholder="eva@gmail.com" ><br>
 					<label for="payment">Payment method: </label>
 					<select id="payment" name="Payment">
 						<option disabled selected>Select</option>
@@ -140,10 +139,10 @@
 					<label for="cardNumber">Card Number: </label>
 						<input type="text" id="cardNumber" name="Card Number" placeholder="1234567890123456">
 					<br><br>
-					<input type="submit" value="Submit">
-					<input type="reset" value="Reset">
-				</div>
-			</form>
+					<input type="submit"/>
+					<input type="reset" />
+				</form>
+			</div>
 		</div>
 	</div>
 

@@ -4,13 +4,22 @@ body {
   background-color: #765343 !important;
   margin: 0;
   padding: 0;
-  font-family: 'Jura', sans-serif; }
+  font-family: 'Jura', sans-serif;
+  font-size: 24pt;
+  color: #AEE2AE;
+  text-align: center; }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
+
+h1 {
+  font-weight: 800;
+  font-size: 48pt;
+  text-align: center;
+  color: #AEE2AE; }
 
 #sumNavbar {
   background-color: #133140 !important;
@@ -73,6 +82,10 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (max-width: 854px) {
+    .box {
+      width: 90vw;
+      margin-top: 50px; } }
 
 .textTitle {
   margin-top: 30px;
@@ -93,7 +106,8 @@ ul li a:hover {
       margin: 5%;
       width: 50%; }
       .product .item .product_indi img {
-        width: auto;
+        width: inherit;
+        padding-top: 20px;
         padding-bottom: 20px; }
       .product .item .product_indi p {
         padding-left: 10%;
@@ -105,6 +119,14 @@ ul li a:hover {
           font-weight: 600;
           size: 20pt;
           margin-top: 2% !important; }
+    @media (max-width: 854px) {
+      .product .item {
+        display: flex;
+        flex-direction: column; }
+        .product .item .product_indi {
+          width: 90%; }
+          .product .item .product_indi img {
+            width: inherit; } }
 
 #ship {
   padding-top: 50px;
@@ -112,6 +134,9 @@ ul li a:hover {
   background-color: #133140;
   width: 40vw;
   color: #AEE2AE !important; }
+  @media (max-width: 854px) {
+    #ship {
+      width: 80vw; } }
 
 #info {
   background-color: #AEE2AE;
@@ -119,6 +144,9 @@ ul li a:hover {
   color: #133140;
   padding-top: 10px;
   padding-bottom: 50px; }
+  @media (max-width: 854px) {
+    #info {
+      width: 80vw; } }
 
 form .product input {
   background-color: #AEE2AE;
@@ -134,9 +162,11 @@ form select, form input, form label {
 #footer {
   background-color: #133140;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding: 2%; }
   #footer p {
     font-size: 12pt;
-    color: #AEE2AE; }
+    color: #AEE2AE;
+    margin: auto; }
 
 /*# sourceMappingURL=products.css.map */
