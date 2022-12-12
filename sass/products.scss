@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+$light: #AEE2AE;
+$dark: #133140;
+$green: #7B8C55;
+$dirt: #765343;
+body{
+    background-color: $dirt!important;
+    margin: 0;
+    padding:0 ;
+    font-family: 'Jura', sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+#sumNavbar{
+    background-color: $dark!important;
+    font-family: 'Jura', sans-serif;
+    display: flex;
+    position: sticky;
+    top: 0;
+    // height:100px;
+    h1{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50pt;
+    align-self: center;
+    margin:1%;
+    color:$light;
+    margin-right:10px;
+
+    }
+
+}
+.navbar-brand{
+    padding:0px;
+    display: flex;
+
+}
+
+.nav-item{
+    padding-left:50px;
+}
+
+
+
+.custom-toggler.navbar-toggler {
+  border-color: $light!important;
+} 
+
+.navbar-nav{
+    position:absolute;
+    width:60%;
+    right:0px;
+    background-color: $dark;
+}
+
+ul li a{
+    text-align: center;
+    padding-left:10px;
+    padding-right:10px;
+    border: 1px solid $dark!important;
+    color:$light!important;
+    font-size:20pt!important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    padding-left:10px;
+    padding-right:10px;
+    border: 1px solid $light!important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    }
+
+
+.box {
+  margin-top: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+
+}
+
+.textTitle{
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size: 48pt;
+    font-weight: 800;
+    color: $dirt;
+    background-color: $green;
+    padding:1%;
+}
+.product{
+    padding:2%;
+    border:$dark 2px solid;
+    .item{
+        display:flex;
+        .product_indi{
+            background-color: $green;
+            margin:5%;
+            width:50%;
+            img{
+                width:auto;
+                padding-bottom: 20px;
+
+            }
+            p{
+                span{
+                    color:$dark;
+                    font-weight: 600;
+                    size:20pt;
+                    margin-top: 2% !important;
+                }
+                padding-left:10%;
+                padding-right:10%;
+                color:$dark;
+                size:16pt!important;
+            }
+
+        }
+    }
+}
+
+#ship{
+    padding-top:50px;
+    padding-bottom: 10px;
+    background-color: $dark;
+    width:40vw;
+    color:$light!important;
+
+}
+#info{
+    background-color: $light;
+    width:40vw;
+    color:$dark;
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+
+form{
+    .product{
+      input{
+        background-color:$light;
+        color:$dark;
+        width:25%;
+        padding:2px;
+      }
+    }
+    select,input,label{
+        background-color:$light;
+        color:$dark;
+        padding:5px;
+        margin:5px;
+  }
+}
+
+#footer{
+  background-color: $dark;
+  width: 100%;
+  text-align: center;
+  p{
+    font-size: 12pt;
+    color: $light;
+  }
+}
