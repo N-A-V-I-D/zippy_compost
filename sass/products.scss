@@ -59,6 +59,7 @@ h1{
 .navbar-brand{
     padding:0px;
     display: flex;
+    flex-grow:1;
 
 }
 
@@ -72,10 +73,16 @@ h1{
 } 
 
 .navbar-nav{
-    position:absolute;
-    width:60%;
-    right:0px;
+    flex-grow: 4;
     background-color: $dark;
+}
+.display{
+    background-color: $green;
+    padding: 1%;
+    width:60vw;
+}
+.search{
+    color:$dark;
 }
 
 ul li a{
@@ -99,6 +106,14 @@ ul li a:hover {
     text-decoration: none;
     }
 
+p{
+    span{
+        font-weight: 600;
+        color:$light;       
+        font-size:20pt !important;
+        margin-top: 2% !important;
+        }
+}
 
 .box {
   margin-top: 120px;
