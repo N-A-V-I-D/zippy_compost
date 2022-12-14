@@ -1,0 +1,7 @@
+<span>Ceramic Compost Crock</span> : Toss in organic scraps like coffee grounds, eggshells, vegetables or clippings. Features a filtered lid for odorless storage and a sturdy, stainless steel handle. : Price $10 : <img src="images/bin.png"/>
+
+<span>Canning Tools Kit</span> : Spend more time canning or dehydrating your favorite fruits and vegetables--and less time looking for tools. This handy, compact kit includes the essential tools you need for canning. : Price $10 : <img src="images/can.png"/>
+
+<span>5 Compost Delivery package</span>: Get this package to enjoy 5 fast, clean, and safe compost deliveries to various facilities. Terms may apply. : Price $30 : <img src="images/five.png"/>
+
+<span>Compost Delivery Tryout </span>: Exhausted by the procedure to compost and want to contribute to the matter? Try out our compost delivery for a deal price. : Price $3 : <img src="images/one.png"/>

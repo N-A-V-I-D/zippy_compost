@@ -64,4 +64,9 @@ a {
       left: 50;
   }
 
-
+  @media (max-width: 800px) {
+      #navlist{
+        display: flex;
+        flex-direction: column;
+      }
+  }
