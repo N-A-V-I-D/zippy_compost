@@ -10,7 +10,7 @@
 <body>
    <h1 id="headline">
        Sign Up For Our Newsletter!
-   </h1> 
+   </h1>
 
    <form action="signup.php" id="form1">
        <input type="text" name="username" id="username" placeholder="Username">
@@ -31,12 +31,12 @@
     Enter Your Text Here:<br>
     <input type="text" name="textdata"><br>
     <input type="submit" name="submit">
-    
+
   </form>
 </body>
 </html>
 <?php
-              
+
 if(isset($_POST['textdata']))
 {
 $data=$_POST['textdata'];
