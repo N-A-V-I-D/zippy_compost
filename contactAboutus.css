@@ -19,7 +19,7 @@ body {
   padding: 0;
 
   font-size: 24pt;
-  color: #AEE2AE;
+
   text-align: center; }
 
 .center {
@@ -159,6 +159,18 @@ h1 {
 
 }
 
+.receipt{
+
+  text-align: center;
+  color: #133140 !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+
+}
+
 
 #form1{
     text-align: center;
@@ -219,6 +231,7 @@ label{
   background-color: #133140 ;
   color: white;
 }
+
 
 
 .hide {
