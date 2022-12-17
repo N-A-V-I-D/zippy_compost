@@ -10,7 +10,7 @@
 <body>
 	<nav id="sumNavbar" class="navbar navbar-dark bg-dark navbar-expand-lg">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">
+	    <a class="navbar-brand" href="indexAfterLogin.html">
 	    	<img src="images/navbarIcon.png" alt="brand icon" />
 			<h1>ZC</h1>
 			</a>
