@@ -8,11 +8,13 @@ error_reporting(E_ALL);
 <html>
 <head>
 	<title>Products</title>
-	<link rel="stylesheet" type="text/css" href="sass/products.css">
+	<link rel="stylesheet" type="text/css" href="contactAboutus.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono" >
+	<style>body, button {font-family: "JetBrains Mono";}</style>
 </head>
 <body>
 	<?php
-	print("<h1> Thank you for shopping with us!<br>The entered information is displayed here!</h1>");
+	print("<h1 class='response'> Thank you for shopping with us!<br>The entered information is displayed here!</h1>");
 	$line = "";
 
 	foreach ($_POST as $key => $value)
@@ -29,4 +31,3 @@ error_reporting(E_ALL);
 
 </body>
 </html>
-
