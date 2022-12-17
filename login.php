@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,18 +15,27 @@
             font-family: 'JetBrains Mono';
       }
     </style>
+=======
+  <title>Store form data in .txt file</title>
+  <link rel="stylesheet" href="contactAboutus.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono" >
+  <style>body, button {
+    font-family: "JetBrains Mono";
+  }
+</style>
+>>>>>>> master
 </head>
 <body>
   <?php
       // process login instruction
 
       // extract infor from form
-      $user = $_POST['username'];
+      $user = $_POST["username"];
       $password =$_POST['password'];
+
 
       // open the file users.txt
 
-      $file = fopen("users.txt", "r");
+      $file = fopen("user.txt", "r");
 
       $flag = FALSE;
 
@@ -58,6 +68,7 @@
 
       if ($flag)
       	{
+<<<<<<< HEAD
       	// echo "<h1 class='textTitle'>Welcome Back" . $user . "!</h2>.";
           echo " <div class='header'>
           <nav id='sumNavbar' class='navbar navbar-dark bg-dark navbar-expand-lg'>
@@ -97,11 +108,14 @@
         echo "<h3 style='text-align: center;'>Your Username: $user <?h3>";
         echo "<h3 style='text-align: center;'>Your Password: $password <?h3>";
         
+=======
+      	echo "<div class='response'><h2> Welcome Back Fellow Composter!!" . $user . "!</h2>" . "<br><p class='response'><a href='indexAfterLogin.html'><button id='responseButton' type='button' name='button'> Home Page </button></a> <br><a href='profile.html'><button id='responseButton' type='button' name='button'> Profile Page </button></a></div> ";;
+>>>>>>> master
       	}
 
       else
       {
-      	echo "Can't enter site because of wrong username and password";
+      	echo "<div class='response'>Can't enter site because of wrong username and password <br> <a href='login.html'><button id='responseButton' type='button' name='button'> Try Again </button></a></div>";
       }
 
       ?>
