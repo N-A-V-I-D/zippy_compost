@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+
+@font-face {
+  font-family: crazy1;
+  src: url("../fonts/Travelnesia-font/TravelnesiaDemo-7BPyl.otf");
+
+}
+
+@font-face {
+  font-family:crazy2;
+  src: url("../fonts/outlyne-font/OutlyneRegular-KnGZ.ttf");
+
+}
+
+
 body {
-  background-color: #765343 !important;
+  background-color: #DBF1DE !important;
   margin: 0;
   padding: 0;
   font-family: 'Jura', sans-serif;
@@ -9,69 +24,99 @@ body {
   color: #AEE2AE;
   text-align: center; }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
 
-h1 {
-  font-weight: 800;
-  font-size: 48pt;
-  text-align: center;
-  color: #AEE2AE; }
-
-#sumNavbar {
-  background-color: #133140 !important;
-  font-family: 'Jura', sans-serif;
-  display: flex;
-  position: sticky;
-  top: 0; }
-  #sumNavbar h1 {
-    font-family: 'Jockey One', sans-serif;
-    font-size: 50pt;
-    align-self: center;
-    margin: 1%;
+  h1 {
+    font-weight: 800;
+    font-size: 48pt;
+    text-align: center;
     color: #AEE2AE;
-    margin-right: 10px; }
+   }
 
-.navbar-brand {
-  padding: 0px;
-  display: flex; }
 
-.nav-item {
-  padding-left: 50px; }
 
-.custom-toggler.navbar-toggler {
-  border-color: #AEE2AE !important; }
+  #sumNavbar {
+    background-color: #133140 !important;
+    font-family: 'Jura', sans-serif;
+    display: flex;
+    position: sticky;
+    top: 0;
+  }
 
-.navbar-nav {
-  position: absolute;
-  width: 60%;
-  right: 0px;
-  background-color: #133140; }
+    #sumNavbar h1 {
+      font-family: 'Jockey One', sans-serif;
+      font-size: 40pt;
+      align-self: center;
+      margin: 1%;
+      color: #AEE2AE;
+      margin-right: 400px; }
 
-ul li a {
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #133140 !important;
-  color: #AEE2AE !important;
-  font-size: 20pt !important;
-  display: flex;
-  align-items: center;
-  text-decoration: none; }
+      @media (max-width:1300px) {
+        #sumNavbar h1 {
+          margin-right: 150px;
+        }
 
-ul li a:hover {
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #AEE2AE !important;
-  display: flex;
-  align-items: center;
-  text-decoration: none; }
+       }
 
+
+  .navbar-brand {
+    padding: 0px;
+    display: flex;
+    flex-grow: 1; }
+
+  .nav-item {
+    padding-left: 50px;
+
+  }
+
+
+  .custom-toggler.navbar-toggler {
+    border-color: #AEE2AE !important; }
+
+  .navbar-nav {
+    flex-grow: 4;
+    background-color: #133140; }
+
+    .search {
+      color: #133140; }
+
+    ul li a {
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid #133140 !important;
+      color: #AEE2AE !important;
+      font-size: 15pt !important;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      border: 1px solid #AEE2AE !important;
+
+    }
+
+    p span {
+      font-weight: 600;
+      color: #AEE2AE;
+      font-size: 20pt !important;
+      margin-top: 2% !important; }
+
+
+  .navBarImg {
+    width:80px;
+  }
+
+.headline {
+  color: #133140;
+}
 .box {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   padding-top: 20px;
   padding-bottom: 20px;
   width: 70vw;
@@ -88,12 +133,12 @@ ul li a:hover {
       margin-top: 50px; } }
 
 .textTitle {
-  margin-top: 30px;
+  color:#133140;
+  font-family: crazy2;
+  margin-top: 100px;
   margin-bottom: 30px;
-  font-size: 48pt;
+  font-size: 35pt;
   font-weight: 800;
-  color: #765343;
-  background-color: #7B8C55;
   padding: 1%; }
 
 .product {

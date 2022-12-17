@@ -11,7 +11,7 @@ $mobile: 854px;
 @mixin mobile{
     @media(max-width:$mobile) {
       @content;
-        }       
+        }
   }
 
 body{
@@ -27,8 +27,8 @@ body{
 .center {
     display: flex;
     justify-content: center;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
 }
 
 h1{
@@ -59,6 +59,7 @@ h1{
 .navbar-brand{
     padding:0px;
     display: flex;
+    flex-grow:1;
 
 }
 
@@ -69,13 +70,19 @@ h1{
 
 .custom-toggler.navbar-toggler {
   border-color: $light!important;
-} 
+}
 
 .navbar-nav{
-    position:absolute;
-    width:60%;
-    right:0px;
+    flex-grow: 4;
     background-color: $dark;
+}
+.display{
+    background-color: $green;
+    padding: 1%;
+    width:60vw;
+}
+.search{
+    color:$dark;
 }
 
 ul li a{
@@ -91,14 +98,18 @@ ul li a{
 }
 
 ul li a:hover {
-    padding-left:10px;
-    padding-right:10px;
     border: 1px solid $light!important;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+
     }
 
+p{
+    span{
+        font-weight: 600;
+        color:$light;
+        font-size:20pt !important;
+        margin-top: 2% !important;
+        }
+}
 
 .box {
   margin-top: 120px;
@@ -111,7 +122,7 @@ ul li a:hover {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   @include mobile {
     width: 90vw;
     margin-top: 50px;
@@ -157,7 +168,7 @@ ul li a:hover {
             }
         }
         @include mobile {
-           display:flex; 
+           display:flex;
            flex-direction:column;
            .product_indi{
              width:90%;
@@ -177,7 +188,7 @@ ul li a:hover {
     width:40vw;
     color:$light!important;
     @include mobile {
-       width:80vw; 
+       width:80vw;
     }
 
 }
@@ -188,7 +199,7 @@ ul li a:hover {
     padding-top:10px;
     padding-bottom: 50px;
     @include mobile {
-       width:80vw; 
+       width:80vw;
     }
 }
 
