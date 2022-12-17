@@ -2,18 +2,24 @@
 <html>
 <head>
   <title>Store form data in .txt file</title>
+  <link rel="stylesheet" href="contactAboutus.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono" >
+  <style>body, button {
+    font-family: "JetBrains Mono";
+  }
+</style>
 </head>
 <body>
   <?php
       // process login instruction
 
       // extract infor from form
-      $user = $_POST['username'];
+      $user = $_POST["username"];
       $password =$_POST['password'];
+
 
       // open the file users.txt
 
-      $file = fopen("users.txt", "r");
+      $file = fopen("user.txt", "r");
 
       $flag = FALSE;
 
@@ -46,12 +52,12 @@
 
       if ($flag)
       	{
-      	echo "<h2>Welcome Back" . $user . "!</h2>." . "<p>Please click on  <a href='private.html'> here </a> to visit your private site! ";;
+      	echo "<div class='response'><h2> Welcome Back Fellow Composter!!" . $user . "!</h2>" . "<br><p class='response'><a href='indexAfterLogin.html'><button id='responseButton' type='button' name='button'> Home Page </button></a> <br><a href='profile.html'><button id='responseButton' type='button' name='button'> Profile Page </button></a></div> ";;
       	}
 
       else
       {
-      	echo "Can't enter site because of wrong username and password";
+      	echo "<div class='response'>Can't enter site because of wrong username and password <br> <a href='login.html'><button id='responseButton' type='button' name='button'> Try Again </button></a></div>";
       }
 
       ?>
