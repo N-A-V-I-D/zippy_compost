@@ -10,7 +10,7 @@
 <body>
 	<nav id="sumNavbar" class="navbar navbar-dark bg-dark navbar-expand-lg">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">			
+	    <a class="navbar-brand" href="#">
 	    	<img src="images/navbarIcon.png" alt="brand icon" />
 			<h1>ZC</h1>
 			</a>
@@ -19,22 +19,22 @@
       <span class="navbar-toggler-icon"></span>
     	</button>
 
-	    <div class="collapse navbar-collapse" id="navbarSupportedContent">	
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	      <ul class="navbar-nav me-auzto mb-2 mb-lg-0">
 	        <li class="nav-item ">
-	          <a class="nav-link active"aria-current="page" href="#">ABOUT US</a>
+	          <a class="nav-link active"aria-current="page" href="aboutus.html">ABOUT US</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">PRODUCTS</a>
+	          <a class="nav-link" href="products.html">PRODUCTS</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">SIGN UP</a>
+	          <a class="nav-link" href="contact.html">CONTACT US</a>
 	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">CONTACT US</a>
+					<li class="nav-item">
+	          <a class="nav-link" href="search.html">SEARCH</a>
 	        </li>
  	        <li class="nav-item">
-	          <a class="nav-link" href="search.html">SEARCH</a>
+	          <a class="nav-link" href="index.html">LOG OUT</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -55,7 +55,7 @@
 			$line = rtrim($line);
 			$info = explode(":", $line);
 			$c = 0;
-	
+
 			$cleanInfo = strtolower($info[0]);
 			$cleanSearch = strtolower($productName);
 
@@ -70,8 +70,8 @@
 			print(" <h1 class='textTitle'>Relevant products</h1>");
 			foreach($collect as $key => $valueSum){
 				print("<div class='display'>");
-				foreach ($valueSum as $value){ 
-					print("<li style='list-style:none;'><p class='search'> $value </p></li>"); 
+				foreach ($valueSum as $value){
+					print("<li style='list-style:none;'><p class='search'> $value </p></li>");
 					}
 					print("</div>");
 					print("<br><br>");

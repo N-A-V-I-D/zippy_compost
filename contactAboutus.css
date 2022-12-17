@@ -171,6 +171,15 @@ h1 {
 
 }
 
+.video {
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-size: 10px;
+
+}
+
+
 
 #form1{
     text-align: center;
