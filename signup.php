@@ -1,47 +1,37 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body>
-   <h1 id="headline">
-       Sign Up For Our Newsletter!
-   </h1>
-
-   <form action="signup.php" id="form1">
-       <input type="text" name="username" id="username" placeholder="Username">
-       <input type="text" name="password" id="password" placeholder="Password">
-       <input type="text" name="verifypassword" id="verifypassword" placeholder="Repeat Password">
-       <input type="submit" name="submit">
-   </form>
-</body>
-</html>  -->
-
 <!DOCTYPE html>
 <html>
 <head>
   <title>Store form data in .txt file</title>
+  <link rel="stylesheet" href="contactAboutus.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains Mono" >
+  <style>body, button {
+    font-family: "JetBrains Mono";
+  }
+</style>
 </head>
 <body>
-  <form method="post">
-    Enter Your Text Here:<br>
-    <input type="text" name="textdata"><br>
-    <input type="submit" name="submit">
 
-  </form>
+  <?php
+    // get values from form
+    $name = $_POST['username'];
+    $psw = $_POST['password'];
+
+    // open the file to store data in with append operation
+    $filea = fopen("signup.txt","a") or die("can't open file");
+
+    // create line to store all values
+    $line= $name.":".$psw."\n";
+
+    // write/store line into file
+    fwrite($filea, $line);
+
+    // close the file
+    fclose($filea);
+
+
+
+    echo "<h1 class='response'>Thank you for signing up, ".$name ." !</h1> <br> <br> <h3 class='response'>Welcome to our members only Zippy Compost website, enjoy!! </h3><a href='indexAfterLogin.html'><button id='responseButton' type='button' name='button'> Home Page</button></a>";
+
+
+    ?>
 </body>
 </html>
-<?php
-
-if(isset($_POST['textdata']))
-{
-$data=$_POST['textdata'];
-$fp = fopen('data.txt', 'a');
-fwrite($fp, $data);
-fclose($fp);
-}
-?>
