@@ -52,7 +52,7 @@
 
       if ($flag)
       	{
-      	echo "<div class='response'><h2> Welcome Back Fellow Composter!!" . $user . "!</h2>" . "<br><p class='response'><a href='indexAfterLogin.html'><button id='responseButton' type='button' name='button'> Home Page </button></a> <br><a href='profile.html'><button id='responseButton' type='button' name='button'> Profile Page </button></a></div> ";;
+      	echo "<div class='response'><h2> Good to see you fellow composter " . $user . "!</h2>" . "<br><p class='response'><a href='indexAfterLogin.html'><button id='responseButton' type='button' name='button'> Home Page </button></a> <br><a href='profile.html'><button id='responseButton' type='button' name='button'> Profile Page </button></a></div> ";;
       	}
 
       else
