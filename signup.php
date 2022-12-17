@@ -16,7 +16,7 @@
     $psw = $_POST['password'];
 
     // open the file to store data in with append operation
-    $filea = fopen("signup.txt","a") or die("can't open file");
+    $filea = fopen("user.txt","a") or die("can't open file");
 
     // create line to store all values
     $line= $name.":".$psw."\n";
