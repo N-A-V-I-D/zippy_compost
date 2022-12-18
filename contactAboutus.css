@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+
+@font-face {
+  font-family: crazy1;
+  src: url("fonts/Travelnesia-font/TravelnesiaDemo-7BPyl.otf");
+
+}
+
+@font-face {
+  font-family:crazy2;
+  src: url("fonts/outlyne-font/OutlyneRegular-KnGZ.ttf");
+
+}
+
+body {
+  background-color: #DBF1DE !important;
+  margin: 0;
+  padding: 0;
+
+  font-size: 24pt;
+
+  text-align: center; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+h1 {
+  font-weight: 800;
+  font-size: 48pt;
+  text-align: center;
+  color: #AEE2AE;
+ }
+
+
+
+#sumNavbar {
+  background-color: #133140 !important;
+  font-family: 'Jura', sans-serif;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+  #sumNavbar h1 {
+    font-family: 'Jockey One', sans-serif;
+    font-size: 40pt;
+    align-self: center;
+    margin: 1%;
+    color: #AEE2AE;
+    margin-right: 400px; }
+
+    @media (max-width:1300px) {
+      #sumNavbar h1 {
+        margin-right: 150px;
+      }
+
+     }
+
+
+.navbar-brand {
+  padding: 0px;
+  display: flex;
+  flex-grow: 1; }
+
+.nav-item {
+  padding-left: 50px;
+
+}
+
+
+.custom-toggler.navbar-toggler {
+  border-color: #AEE2AE !important; }
+
+.navbar-nav {
+  flex-grow: 4;
+  background-color: #133140; }
+
+  .search {
+    color: #133140; }
+
+  ul li a {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #133140 !important;
+    color: #AEE2AE !important;
+    font-size: 15pt !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    border: 1px solid #AEE2AE !important;
+
+  }
+
+  p span {
+    font-weight: 600;
+    color: #AEE2AE;
+    font-size: 20pt !important;
+    margin-top: 2% !important; }
+
+
+.navBarImg {
+  width:80px;
+}
+
+/* #headline{
+    text-align: center;
+    font-family: crazy2;
+    color: #133140;
+    margin-top: 100px;
+    margin-bottom: 40px;
+} */
+
+.textTitle, #headline {
+  color:#133140;
+  font-family: crazy2;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 35pt;
+  font-weight: 800;
+  padding: 1%; }
+
+.response {
+  text-align: center;
+  color: #133140;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 1em;
+
+}
+
+#responseButton {
+  padding: 10px 15px 15px 10px;
+  margin-left:200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+
+  font-size: 15px;
+  background-color: white;
+  border-radius: 10px;
+  border-style: none;
+}
+
+#responseButton:hover {
+
+  background-color: #133140 ;
+  color: white;
+
+}
+
+.receipt{
+
+  text-align: center;
+  color: #133140 !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+
+}
+
+.video {
+  display: block;
+  margin:auto;
+  text-align: center;
+  font-size: 10px;
+
+}
+
+
+
+#form1{
+    text-align: center;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.formBox{
+  margin-bottom: 20px;
+}
+
+#firstName,#lastName,#email{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: auto;
+    border-style: none;
+    font-size: 20px;
+    background-color: #ffffff;
+  }
+#textArea {
+  width:400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: auto;
+  border-style: none;
+  font-size: 25px;
+  background-color: #ffffff;
+  font-size: 20px;
+
+}
+
+
+label{
+    font-size: 20px;
+
+}
+
+#submitButton{
+    padding: 10px 15px 15px 10px;
+    margin-left:200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border-style: none;
+
+
+  }
+
+#submitButton:hover {
+  background-color: #133140 ;
+  color: white;
+}
+
+
+
+.hide {
+  display: none;
+}
+
+#carousel {
+  padding-left: 20%;
+  padding-right:20%;
+}
+
+
+.informationBoxes {
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+/* for the information on aboutus */
+/* https://www.webnots.com/how-to-create-custom-css-text-boxes/ */
+
+.webnots-notification-box {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: verdana, 'open sans', sans-serif;
+  margin-bottom: 25px;
+  padding: 10px 14px 10px 44px;
+  position: relative;
+  box-shadow: 0px 1px 5px #999;
+}
+.webnots-notification-box:before {
+  font-family: FontAwesome;
+  font-size: 21px;
+  left: 14px;
+  position: absolute;
+}
+.webnots-information {
+  background-color: #3498db;
+  }
+.webnots-information:before {
+  content: "\f129";
+  margin-left: 4px;
+}
+.webnots-question {
+  background-color: #f1c40f;
+}
+.webnots-question:before {
+  content: "\f128";
+  margin-left: 2px;
+}
+.webnots-tip {
+  background-color: #16a085;
+}
+.webnots-tip:before {
+  content: "\f0eb";
+  margin-left: 2px;
+}
+
+#footer {
+  background-color: #133140;
+  width: 100%;
+  text-align: center;
+  padding: 2%; }
+  #footer p {
+    font-size: 12pt;
+    color: #AEE2AE;
+    margin: auto; }
