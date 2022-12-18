@@ -4,7 +4,7 @@ console.log('hi')
 
 $(document).ready(function() {
 
-    $("#picture").animate({left: "+900"}, 600);
+    $("#picture").animate({left: "+950"}, 700);
     // fadeInName();
     $("#heading").hide();
     $("#heading").fadeIn(1400);
@@ -13,7 +13,7 @@ $(document).ready(function() {
     $("#navlist").fadeIn(1400);
 
 });
-
+ 
 // function fadeInName(){
 //     $("#name").fadeIn(2000)
 // }
